@@ -1,0 +1,85 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+  }
+  
+  /* Popup styles */
+  .popup {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Map container styles */
+  #map-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #map {
+    flex: 2 0 60%;
+    height: 400px;
+  }
+  
+  #stories-container {
+    flex: 1 0 40%;
+    padding: 20px;
+  }
+  
+  /* Filter container styles */
+  #filter-container {
+    flex: 0 0 100%;
+    margin-top: 20px;
+  }
+  
+  #filter-toggle {
+    display: block;
+    width: 100%;
+  }
+  
+  #filter-content {
+    display: none;
+    padding: 10px;
+    background-color: #f2f2f2;
+  }
+  
+  .collapsed #filter-content {
+    display: block;
+  }
+  
+  /* News and stats container styles */
+  #news-container,
+  #stats-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
+  

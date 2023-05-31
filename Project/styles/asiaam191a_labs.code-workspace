@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "../../../asiaam191a_labs"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "asiaam191a_labs",
+		"liveServer.settings.port": 0
+	}
+}
