@@ -1,14 +1,14 @@
 /* General styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: rgb(23, 6, 71);
+    background-color: #ede5d5;
     margin: 0;
     padding: 0;
   }
   
   /* Header styles */
   header {
-    background-color: #f2f2f2;
+    background-color: #c59f54ee;
     padding: 20px;
   }
   
@@ -33,8 +33,8 @@ body {
   
   /* Popup styles */
   .popup {
-    background-color: #fff;
-    border: 1px solid #ccc;
+    background-color: #ede5d5;
+    border: 1px solid #c59f54ee;
     padding: 20px;
     margin-bottom: 20px;
   }
@@ -69,7 +69,7 @@ body {
   #filter-content {
     display: none;
     padding: 10px;
-    background-color: #f2f2f2;
+    background-color: #ede5d5;
   }
   
   .collapsed #filter-content {
