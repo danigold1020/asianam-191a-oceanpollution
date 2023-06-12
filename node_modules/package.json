@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "geojson-vt": "^3.2.1"
+  }
+}

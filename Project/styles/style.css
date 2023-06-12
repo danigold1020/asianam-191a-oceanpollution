@@ -1,86 +1,85 @@
 /* General styles */
 body {
-    font-family: Verdana, sans-serif;
-    background-color: #ede5d5;
-    margin: 2;
-    margin-bottom: 20px;
-  }
-  
-  /* Header styles */
-  header {
-    background-color: #c59f54ee;
-    padding: 20px;
-  }
-  
-  header h1 {
-    margin: 0;
-  }
-  
-  nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 20px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-  }
-  
-  /* Popup styles */
-  .popup {
-    background-color: #ede5d5;
-    border: 1px solid #c59f54ee;
-    padding: 20px;
-    margin-bottom: 20px;
-  }
-  
-  /* Map container styles */
-  #map-container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  #map {
-    flex: 2 0 60%;
-    height: 400px;
-  }
-  
-  #stories-container {
-    flex: 1 0 40%;
-    padding: 20px;
-  }
-  
-  /* Filter container styles */
-  #filter-container {
-    flex: 0 0 100%;
-    margin-top: 20px;
-  }
-  
-  #filter-toggle {
-    display: block;
-    width: 100%;
-  }
-  
-  #filter-content {
-    display: none;
-    padding: 10px;
-    background-color: #ede5d5;
-  }
-  
-  .collapsed #filter-content {
-    display: block;
-  }
-  
-  /* News and stats container styles */
-  #news-container,
-  #stats-container {
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #f2f2f2;
-  }
-  
+  font-family: Verdana, sans-serif;
+  background-color: #ede5d5;
+  margin: 2px; /* Specify a unit value */
+  margin-bottom: 20px;
+}
+
+/* Header styles */
+header {
+  background-color: #c59f54ee;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+/* Popup styles */
+.popup {
+  background-color: #ede5d5;
+  border: 1px solid #c59f54ee;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Map container styles */
+#map-container {
+  position: relative;
+  height: 400px; /* Adjust the height as needed */
+}
+
+
+#map {
+  width: 100%; /* Adjust the width as needed */
+  height: 400px; /* Adjust the height as needed */
+}
+
+
+#stories-container {
+  padding: 20px;
+}
+
+/* Filter container styles */
+#filter-container {
+  margin-top: 20px;
+}
+
+#filter-toggle {
+  display: block;
+  width: 100%;
+}
+
+#filter-content {
+  display: none;
+  padding: 10px;
+  background-color: #ede5d5;
+}
+
+.collapsed #filter-content {
+  display: none; /* Change to "none" for the collapsed state */
+}
+
+/* News and stats container styles */
+#news-container,
+#stats-container {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f2f2f2;
+}

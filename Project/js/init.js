@@ -16,12 +16,16 @@ function addMarker(lat, lng, message1, message2) {
 }
 
 const dataUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRHNN772WiQdrmo-wtACIMvYencHdlL6qrR1DpW4CzouypvSAuKuPzddjsbTTPsab19JlFGS8tKXMOD/pub?output=csv';
+const boundaryLayer = 'Project/geojson/sb_zipcodes.geojson';
 
 function loadData(url) {
   Papa.parse(url, {
     header: true,
     download: true,
-    complete: (results) => processData(results.data),
+    complete: (results) => {
+      processData(results.data);
+      loadBoundaryLayer();
+    },
   });
 }
 
@@ -30,6 +34,19 @@ function processData(data) {
     const { lat, lng, 'Please describe your experience.': message1, 'Why not?': message2 } = row;
     addMarker(parseFloat(lat), parseFloat(lng), message1, message2);
   });
+}
+
+function loadBoundaryLayer() {
+  fetch(boundaryLayer)
+    .then((response) => response.json())
+    .then((geojson) => {
+      const tileIndex = geojsonvt(geojson); // 
+      const tileOptions = {
+        maxZoom: 14, 
+      };
+      const vectorTileLayer = L.vectorGrid.slicer(tileIndex, tileOptions); // creating layer please????
+      vectorTileLayer.addTo(map);
+    });
 }
 
 loadData(dataUrl);
