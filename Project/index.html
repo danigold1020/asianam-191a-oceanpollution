@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>SB Oil Spills</title>
+  <title>Santa Barbara Oil Spills</title>
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.css" />
 </head>
@@ -28,7 +28,30 @@
   </div>
 
   <div id="map-container">
-    <div id="map"></div>
+    <div id="map">
+      <div id="legend">
+        <div id="legend">
+            <div id="positiveLegend">
+                <input type="checkbox" id="positiveCheckbox">
+                <label for="positiveCheckbox">
+                    Positive <svg height='10' width='10'><circle cx='5' cy='5' r='4' stroke='black' stroke-width='1' fill='green' /></svg>
+                </label>
+            </div>
+            <div id="neutralLegend">
+                <input type="checkbox" id="neutralCheckbox">
+                <label for="neutralCheckbox">
+                    Neutral <svg height='10' width='10'><circle cx='5' cy='5' r='4' stroke='black' stroke-width='1' fill='blue' /></svg>
+                </label>
+            </div>
+            <div id="negativeLegend">
+              <input type="checkbox" id="negativeCheckbox">
+              <label for="negativeCheckbox">
+                  Negative <svg height='10' width='10'><circle cx='5' cy='5' r='4' stroke='black' stroke-width='1' fill='red' /></svg>
+              </label>
+          </div>
+    </div>
+ 
+ 
     <div id="stories-container">
       <!-- Add your stories content here -->
     </div>
