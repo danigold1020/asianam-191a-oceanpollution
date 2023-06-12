@@ -39,14 +39,33 @@ function processData(data) {
 function loadBoundaryLayer() {
   fetch(boundaryLayer)
     .then((response) => response.json())
-    .then((geojson) => {
-      const tileIndex = geojsonvt(geojson); // 
+    .then((sbzipcodesGeojson) => {
+      const tileIndex = geojsonvt(sbzipcodesGeojson);
       const tileOptions = {
-        maxZoom: 14, 
+        maxZoom: 14,
       };
-      const vectorTileLayer = L.vectorGrid.slicer(tileIndex, tileOptions); // creating layer please????
+      const vectorTileLayer = L.vectorGrid.slicer(tileIndex, tileOptions);
       vectorTileLayer.addTo(map);
     });
 }
 
 loadData(dataUrl);
+
+// Add this script at the end to show the modal on page load
+document.addEventListener('DOMContentLoaded', (event) => {
+  const modal = document.getElementById('myModal');
+  modal.style.display = 'block';
+
+  const closeModal = () => {
+    modal.style.display = 'none';
+  };
+
+  const closeButton = modal.querySelector('.close');
+  closeButton.addEventListener('click', closeModal);
+
+  window.addEventListener('click', (event) => {
+    if (event.target === modal) {
+      closeModal();
+    }
+  });
+});
