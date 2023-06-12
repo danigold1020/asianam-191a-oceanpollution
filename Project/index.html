@@ -3,30 +3,43 @@
 <head>
   <title>Santa Barbara Oil Spills</title>
   <link rel="stylesheet" href="styles/style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.css" />
+
+  <!-- Leaflet's css-->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+  <!-- Leaflet's JavaScript-->
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
+   <!-- Adding the TurfJs library  -->
+   <script src='https://unpkg.com/@turf/turf@6.3.0/turf.min.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+  <script src="https://unpkg.com/geojson-vt@3.2.0/geojson-vt.js"></script>
+  <style>
+   
+  </style>
 </head>
 <body>
   <header>
-    <h1>Oil Spills: Civic Engagement in Santa Barbara County</h1>
+    <h1>Santa Barbara Community Survey: Oil Spills and Civic Engagement</h1>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdAv4MqD11Qdh8DybMXtSOVRfmqnRJAwASY8I6r1etLCnvnKw/viewform?usp=sf_link">Take Survey</a></li>
-        <li><a href="mailto:sboilspills@gmail.com">Contact Us</a></li>
+        <li><a href=index.html>Home</a></li>
+        <li><a href=about.html>About</a></li>
+        <li><a href="#survey">Take Survey</a></li>
+        <li><a href="mailto:sboilspills@gmail.com">Contact here</a> </li>
       </ul>
     </nav>
   </header>
-
-   <div class="popup">
-    <!-- Add your welcome information content here -->
-    <h2> Welcome to our mapplication!</h2> <br>
-    <p > Hello! We are a group of three UCLA students enrolled in Asian American Studies 191A, a Web Development and GIS for Social Change class. We created this survey for the Santa Barbara community in California to learn about local residents' experiences and civic engagement involving oil spills and the barriers and challenges they have faced in trying to participate in civic engagement. 
-      We created our project for the residents of the Santa Barbara community that live in close proximity to oil wells and have experienced the destruction of oil spills. If you are apart of the Santa Barbara community feel free to 
-        <a href="https://forms.gle/MwcqjoXpYtB3k383A">take our survey</a> to contribute! Or navigate our map to see fellow community members' experiences and barriers to civic engagement regarding oil spills.
-    </p>
+  <div id="myModal" class="modal2">
+    <!-- Modal content -->
+    <div class="modal-content2">
+      <span class="close">&times;</span>
+      <h1>Welcome to our mapplication! <span style="font-weight: bold; color: #e224c9">The Oilies</span></h1>
+      <h3>Hello! We are a group of three UCLA students enrolled in Asian American Studies 191A, a Web Development and GIS for Social Change class. We created this survey for the Santa Barbara community in California to provide a platform for local residents' to share and hear about experiences in civic engagement involving oil spills or the barriers and challenges they have faced in trying to participate in civic engagement.</h3>
+      <p>How to navigate our mapplication:</br>
+        - Objective 1</br>
+        - Objective 2</br>
+        - Objective 3</p>
+    </div>
   </div>
-
   <div id="map-container">
     <div id="map">
       <div id="legend">
@@ -53,26 +66,15 @@
  
  
     <div id="stories-container">
-      <!-- Add your stories content here -->
+      <!-- Add stories content here -->
     </div>
-    <div id="filter-container">
-      <button id="filter-toggle">Filter Layers</button>
-      <div id="filter-content" class="collapsed">
-        <!-- Add your filter layers content here -->
-      </div>
+    
     </div>
   </div>
-
-  <div id="news-container">
-    <!-- Add your news content here -->
-  </div>
-
-  <div id="stats-container">
-    <!-- Add your stats content here -->
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <!--  stats? content here? as a on click memo -->
   <script src="js/init.js"></script>
+  <script>
+  
+  </script>
 </body>
 </html>
