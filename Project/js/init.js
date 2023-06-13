@@ -50,7 +50,7 @@ console.log(thisPoint)
 // Put all the turfJS points into `allPoints`
 allPoints.push(thisPoint);
 
-if(thisRow.feels == "Positive"){ 
+if(thisRow['How would you describe your overall experience in civic engagement?'] == "Positive"){ 
 
  let marker = L.circleMarker([thisRow.lat,thisRow.lng],
        {"radius": 8,
@@ -61,14 +61,14 @@ if(thisRow.feels == "Positive"){
 pos.addLayer(marker).bindPopup("Positive marker popup content")
 
 }
-else if (thisRow.feels == "Negative"){let marker = L.circleMarker([thisRow.lat,thisRow.lng],
+else if (thisRow['How would you describe your overall experience in civic engagement?'] == "Negative"){let marker = L.circleMarker([thisRow.lat,thisRow.lng],
   {"radius": 8,
   "color": "#FF6961",
   "weight": 3,
   "opacity": 300})
 neg.addLayer(marker).bindPopup("Negative marker popup content")}
 
-else if (thisRow.feels == "Neutral"){let marker = L.circleMarker([thisRow.lat,thisRow.lng],
+else if (thisRow['How would you describe your overall experience in civic engagement?'] == "Neutral"){let marker = L.circleMarker([thisRow.lat,thisRow.lng],
   {"radius": 8,
   "color": "#F5F5DC",
   "weight": 3,
@@ -94,7 +94,7 @@ function processData(data){
   data.forEach((thisRow) => {
     console.log('lat:', thisRow.lat);
     console.log('lng:', thisRow.lng);
-    console.log('sentiment:', thisRow.feels)
+    console.log('feels:', thisRow['How would you describe your overall experience in civic engagement?'])
     console.log(thisRow)
     addMarker(thisRow)
   
@@ -143,8 +143,8 @@ function onEachFeature(feature, layer) {
   console.log(feature.properties)
   if (feature.properties.values.length > 0) {
     // Count the values within the polygon by using .length on the values array created from turf.js collect
-  let count = feature.properties.values.length
-  let targetZcta = feature.properties.zcta
+  let count = layer.feature.properties.values.length
+  let targetZcta = layer.feature.properties.zcta
     console.log(count) //see count on click
     let text = count.toString(); // Convert it to a string
     layer.bindPopup ('Zipcode' + targetZcta + ': ' + text + 'Survey Responses'); // Bind the pop up to the number
@@ -161,13 +161,13 @@ function onEachFeature(feature, layer) {
 function populateSidebar(h){
   let layer = h.target;
 
-  let targetZcta = feature.properties.zcta
+  let targetZcta = layer.feature.properties.zcta
   let numOfStories = layer.feature.properties.values.length
   document.getElementById("stories").innerHTML = '<h2 style="text-align: center;">' + targetZcta + '</h2>';
   document.getElementById("stories").innerHTML += '<h3 style="text-align: center;">(' + numOfStories + ' Responses)</h3>';
 
   let stories = layer.feature.properties.values
-  stories.forEach(story => addToStoryContent(story))
+  
 
      //add styling to story divs
   for (const s of document.getElementsByClassName("posStory")) {
@@ -190,11 +190,12 @@ function populateSidebar(h){
     s.style.borderRadius = "10px";
     
   }
+  stories.forEach(story => addToStoryContent(story));
 }
 
 function addToStoryContent(thisRow){
 
-  if(thisRow.feels == 'Positive'){ //if experience was positive
+  if(thisRow['How would you describe your overall experience in civic engagement?'] == 'Positive'){ //if experience was positive
 
     document.getElementById("stories").innerHTML += `<div class="posStory">
     <b>We're happy your experience was positive, if you'd like, please describe your motivations for participation</b>
@@ -203,14 +204,14 @@ function addToStoryContent(thisRow){
     <p>${thisRow.participateDesc}</p></div>`; 
 
   }
-  else if (thisRow.feels == "Neutral"){ //if experience was neutral
+  else if (thisRow['How would you describe your overall experience in civic engagement?'] == "Neutral"){ //if experience was neutral
     document.getElementById("stories").innerHTML += `<div class="neuStory">
     <b>If you'd like, please describe your motivations for participation</b>
     <p>${thisRow.motivation}<p>
     <b>Story</b>
     <p>${thisRow.participateDesc}</p></div>`; 
   }
-  else if (thisRow.feels == "Negative"){ //if experience was negative
+  else if (thisRow['How would you describe your overall experience in civic engagement?'] == "Negative"){ //if experience was negative
     document.getElementById("stories").innerHTML += `<div class="negStory">
     <b>We're sorry to hear your experience was negative, if you'd like, please describe your motivations for participation</b>
     <p>${thisRow.motivation}<p>
