@@ -17,7 +17,12 @@
 
 
 ## General Information
-- Provide general information about your project here.
+- In Santa Barbara County, there are around 100 active oil and gas wells and 1,778 idle wells that pose environmental and health risks.
+- The Santa Barbara County Grand Jury found that the risks are not being addressed due to lack of adequate oversight.
+- The issue of proximity to oil for the residents of Santa Barbara County is one that deserves map-based support because of the challenges around accessibility.
+- It is essential that the Santa Barbara community is included in the decision-making process
+- Residents should have a place to share opinions and learn about others’ experiences. 
+
 - What problem does it (intend to) solve?
 - What is the purpose of your project?
 - Why did you undertake it?
@@ -25,16 +30,15 @@
 
 
 ## Technologies Used
-- Tech 1 - version 1.0
-- Tech 2 - version 2.0
-- Tech 3 - version 3.0
+- JavaScript
+- Leaflet
+- Geocoding with Google Sheets and Google Apps Script 
 
 
 ## Features
-List the ready features here:
-- Awesome feature 1
-- Awesome feature 2
-- Awesome feature 3
+- Community survey
+- Mapplication
+- User story display
 
 
 ## Screenshots
