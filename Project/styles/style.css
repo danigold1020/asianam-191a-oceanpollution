@@ -2,7 +2,11 @@
 body {
   position: relative;
   min-height: 100vh;
+<<<<<<< HEAD
   font-family: 'Gill Sans', sans-serif;
+=======
+  font-family:'Gill Sans', sans-serif;
+>>>>>>> origin/main
   background-color: #ede5d5;
 
   margin: 20px;
