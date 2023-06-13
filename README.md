@@ -34,8 +34,8 @@
 - CSS
 - JavaScript
 - Leaflet
-- Geocoding with Google Sheets and Google Apps Script
-- Google Forms
+- Google Sheets and Google Apps Script (geocoding)
+- Google Forms (community survey)
 
 
 ## Features
