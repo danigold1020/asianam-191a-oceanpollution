@@ -65,7 +65,7 @@ The About page serves as a place where users can learn more details about the pr
 
 
 **Santa Barbara Community Community Survey About Page:**
-![Santa Barbara Community Community Survey About Page](./img/WO_about.png)
+<img width="1440" alt="about" src="https://github.com/danigold1020/asianam-191a-oceanpollution/assets/73193396/f1c2bad0-79d7-4acd-81cf-619cfafe125a">
 
 ## Acknowledgements
 - We created this project as part of the AAS191A: Web Development and GIS for Social Change course at UCLA.
