@@ -2,10 +2,10 @@
 body {
   position: relative;
   min-height: 100vh;
-  font-family: Verdana, sans-serif;
+  font-family:'Gill Sans', sans-serif;
   background-color: #ede5d5;
 
-  margin: 2px;
+  margin: 20px;
   margin-bottom: 20px;
 }
 
@@ -89,6 +89,42 @@ nav ul li a {
 
 #stories-container {
   padding: 20px;
+}
+
+#sidebar{ /*right side panel*/
+  grid-area: sidebar;
+  font-family: 'DM Sans', sans-serif;
+  /* background-color: #81b5a8; */
+  padding: 20px;
+  border-radius: 25px;
+  overflow-y: scroll;
+  height: 500px; 
+
+}
+
+footer{
+  font-family: 'DM Sans', sans-serif;
+  background-color: #c59f54ee;
+  text-align: center;
+}
+
+button{
+  font-size: 20px;
+  padding: 15px 32px;
+  margin: 5px;
+  background-color: #eecca7;
+  font-family: 'DM Sans', sans-serif;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 10px;
+  margin: 1.5rem;
+  transition: all 0.5s ease;
+}
+
+button:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  filter: brightness(110%);
 }
 
 /* Filter container styles */

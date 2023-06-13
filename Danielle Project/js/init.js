@@ -1,7 +1,7 @@
 // Declare variables
 let mapOptions = {
   'center': [34.5027, -120.0360],
-  'zoom': 11.5
+  'zoom': 5
 };
 
 // Define the leaflet map
@@ -15,7 +15,7 @@ let allPoints = []; // Array for all the data points
 let Jawg_Light = L.tileLayer('https://{s}.tile.jawg.io/jawg-light/{z}/{x}/{y}{r}.png?access-token={accessToken}', {
 	attribution: '<a href="http://jawg.io" title="Tiles Courtesy of Jawg Maps" target="_blank">&copy; <b>Jawg</b>Maps</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
 	minZoom: 0,
-	maxZoom: 22,
+	maxZoom: 10,
 	subdomains: 'abcd',
 	accessToken: 'FkWnkf1e22dnL71CnkeDRnZeEZRyPNd6DqNr2frT4o5zPMcnKvgfcgG2gQCNjnR7'
 });
