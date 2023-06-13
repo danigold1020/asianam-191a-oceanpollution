@@ -5,7 +5,7 @@
 > Live demo [_here_](https://penelopelamb.github.io/wasted-opportunities/index.html).
 
 ## Table of Contents
-* [Objective](#seedlingobjective)
+* [Objective](#oceanobjective)
 * [Who is being empowered?](#seedlingwho-is-being-empowered)
 * [What technology was used?](#seedlingwhat-technology-was-used)
 * [How it can be repurposed?](#seedlinghow-it-can-be-repurposed)
