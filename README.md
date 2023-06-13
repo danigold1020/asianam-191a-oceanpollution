@@ -68,5 +68,5 @@ The About page serves as a place where users can learn more details about the pr
 ![Wasted Opportunities About Page](./img/WO_about.png)
 
 ## Acknowledgements
-- This project was created as part of the AAS191A: Web Development and GIS for Social Change course at UCLA.
-- Many thanks to Professor Albert Kochaphum for guiding us through every process and for being a great teacher!
+- We created this project as part of the AAS191A: Web Development and GIS for Social Change course at UCLA.
+- We appreciate Professor Albert Kochaphum for guiding us throughout our project and for a meaningful quarter of learning!
