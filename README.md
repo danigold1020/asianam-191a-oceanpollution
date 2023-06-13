@@ -60,6 +60,7 @@ The About page serves as a place where users can learn more details about the pr
 ### Screenshots
 **Santa Barbara Community Community Survey Welcome Page:**
 ![Santa Barbara Community Community Survey Welcome Page](welcome.png)
+<img width="1440" alt="welcome" src="https://github.com/danigold1020/asianam-191a-oceanpollution/assets/73193396/8b22ece2-c625-4c5e-a9e9-fd8687df1ab2">
 
 **Santa Barbara Community Community Survey Home Page:**
 ![Santa Barbara Community Community Survey Home Page](about.png)
