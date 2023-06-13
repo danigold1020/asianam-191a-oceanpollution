@@ -58,13 +58,13 @@ Underneath our map and slideshow, there are descriptions to the project and UCLA
 The About page serves as a place where users can learn more details about the project without taking space away or distracting from the main map feature on the Home page.
 
 ### Screenshots
-**Wasted Opportunities Home Page:**
+**Santa Barbara Community Community Survey Welcome Page:**
 ![Wasted Opportunities Home Page](./img/WO_fullsite.png)
 
-**Wasted Opportunities Map Feature & Slideshow, Student Profile:**
+**Santa Barbara Community Community Survey Home Page:**
 ![Wasted Opportunities Map Feature](./img/WO_map.png)
 
-**Wasted Opportunities About Page:**
+**Santa Barbara Community Community Survey About Page:**
 ![Wasted Opportunities About Page](./img/WO_about.png)
 
 ## Acknowledgements
