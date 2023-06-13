@@ -59,13 +59,13 @@ The About page serves as a place where users can learn more details about the pr
 
 ### Screenshots
 **Santa Barbara Community Community Survey Welcome Page:**
-![Wasted Opportunities Home Page](./img/WO_fullsite.png)
+![Santa Barbara Community Community Survey Welcome Page](./img/WO_fullsite.png)
 
 **Santa Barbara Community Community Survey Home Page:**
-![Wasted Opportunities Map Feature](./img/WO_map.png)
+![Santa Barbara Community Community Survey Home Page](./img/WO_map.png)
 
 **Santa Barbara Community Community Survey About Page:**
-![Wasted Opportunities About Page](./img/WO_about.png)
+![Santa Barbara Community Community Survey About Page](./img/WO_about.png)
 
 ## Acknowledgements
 - We created this project as part of the AAS191A: Web Development and GIS for Social Change course at UCLA.
