@@ -55,7 +55,7 @@ Underneath our map and slideshow, there are descriptions to the project and UCLA
 
 5. **About Page**
 
-The About page serves as a place where users can learn more details about the project without taking space away or distracting from the main map feature on the Home page.
+We included an About page to enable users to learn more details about our project's objectives and long-term impact, as well as provide insight into how others can use this project in the future. 
 
 ### Screenshots
 **Santa Barbara Community Community Survey Welcome Page:**
