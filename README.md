@@ -30,9 +30,12 @@
 
 
 ## Technologies Used
+- HTML
+- CSS
 - JavaScript
 - Leaflet
-- Geocoding with Google Sheets and Google Apps Script 
+- Geocoding with Google Sheets and Google Apps Script
+- Google Forms
 
 
 ## Features
