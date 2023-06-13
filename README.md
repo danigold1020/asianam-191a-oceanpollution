@@ -67,7 +67,6 @@ Project is: complete (with future improvements welcomed).
 
 
 ## Room for Improvement
-
 Room for improvement:
 - Improvement to be done 1
 - Improvement to be done 2
