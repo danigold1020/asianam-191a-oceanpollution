@@ -23,7 +23,7 @@ Our project will empower the residents of Santa Barbara County, especially commu
 ## :ocean:What technology was used?
 In this project, we used Google Forms to create our community survey and multiple programming languages (HTML, CSS, and Javascript) to create our mapplication. We also used software such as Leaflet and Papaparse to create our map and import our community survey data, as well as Google Sheets and Google Apps Script for geocoding. 
 
-To create the website and mapplication itself, we utilzed 2 main HTML files, 1 CSS file, and 2 Javascript files. Our HTML files were for our Home and About pages. We connected the CSS and Javascript files to these main HTML files to incorporate style elements and our interactive map and slideshow features.
+To create the website and mapplication itself, we utilzed 2 main HTML files, 1 CSS file, 1 Javascript files, and 1 geojson file. Our HTML files were for our Home and About pages. To add our style elements, the map, and story side panel, we connected the CSS and Javascript files to our 2 main HTML files.
 
 ### What technical and ethical problems could there be in developing this tool?
 Since we narrowed our scope to focus only on residents of Santa Barbara County, this smaller, more convenient sample in California may provide stories that don't represent perspectives of other communities dealing with the threat of oil spills. There are a wide variety of stories and experiences regarding oil spills and pollution around the world, so we acknowledge that the current community of focus displays a biased archive of stories regarding civic engagement experiences in Santa Barbara.
