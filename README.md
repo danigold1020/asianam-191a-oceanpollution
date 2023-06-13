@@ -77,10 +77,8 @@ To do:
 
 
 ## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- This project was based on [this tutorial](https://www.example.com).
-- Many thanks to...
+- This project was created as part of the AAS191A: Web Development and GIS for Social Change course at UCLA.
+- We appreciate Professor Albert Kochaphum for guiding us throughout our project and for a meaningful quarter of learning!
 
 
 ## Contact
