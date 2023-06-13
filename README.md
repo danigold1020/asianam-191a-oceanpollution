@@ -39,7 +39,7 @@ By highlighting the stories of the Santa Barbara community, our mapplication ser
 ### Features
 1. **Interactive Map**
 
-The Leaflet Map is very interactive for the user. It is centered around UCLA's campus, and the markers are indicative of each student response and where they live. By clicking on a marker, the map will fly to that marker and it will be the only marker highlighted. Furthermore, clicking a marker creates a pop-up displaying the respondent's profile, including Major and Campus Affiliations. The slideshow to the right of the map also changes to that respondent's survey answers, creating a full story for this community member. 
+Our Leaflet Map provides an interactive experience with our mapplication. It is centered around Santa Barbara, California and the markers are indicative of each residents' response and zip code. By clicking on a zip code region, the residents' response will pop out in the side panel displaying the respondent's experiences and challenges with civic engagement. 
 
 2. **Slideshow**
 
