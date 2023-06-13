@@ -86,7 +86,7 @@ header ul li a {
 
 #sidebar {
   flex: 0 0 300px; /* Adjust the width of the sidebar as needed */
-  background-color: #81b5a8;
+  background-color: #804e0e;
   color: white;
   padding: 20px;
   overflow-y: auto; /* Enable vertical scrolling if needed */
