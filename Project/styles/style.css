@@ -102,6 +102,31 @@ nav ul li a {
 
 }
 
+footer{
+  font-family: 'DM Sans', sans-serif;
+  background-color: #c59f54ee;
+  text-align: center;
+}
+
+button{
+  font-size: 20px;
+  padding: 15px 32px;
+  margin: 5px;
+  background-color: #eecca7;
+  font-family: 'DM Sans', sans-serif;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 10px;
+  margin: 1.5rem;
+  transition: all 0.5s ease;
+}
+
+button:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  filter: brightness(110%);
+}
+
 /* Filter container styles */
 #filter-container {
   margin-top: 20px;
@@ -129,3 +154,4 @@ nav ul li a {
   padding: 20px;
   background-color: #f2f2f2;
 }
+
