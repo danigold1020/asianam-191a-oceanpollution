@@ -37,13 +37,17 @@ By highlighting the stories of the Santa Barbara community, our mapplication ser
 
 ## :ocean:The Mapplication
 ### Features
-1. **Interactive Map**
+1. **Welcome Pop-Up**
+Upon opening our website, users will see our welcome pop-up which we included to help users quickly learn about our team and project goals, and how to start navigating through our website. We invite users to navigate through our map to read stories of Santa Barbara community members or share their own story with us.
 
-Our Leaflet Map provides an interactive experience with our mapplication. It is centered around Santa Barbara, California and the markers are indicative of each residents' response and zip code. By clicking on a zip code region, the residents' response will pop out in the side story panel displaying the respondent's experiences and challenges with civic engagement. The story panel categorizes the responses based on whether the respondent has a positive, negative, or neutral experience, or no experience. 
+How to navigate our mapplication:
+→ Click on the legend in the top right corner to filter survey responses based on positive, negative, and neutral experiences, as well as those with no experience.
+→ Examine the polygons on the map to see how respondents feel in each zip code region of Santa Barbara County
+→ Scroll through the responses based on experience type to learn more about the thoughts and experiences of Santa Barbara residents
 
-2. **Slideshow**
+3. **Interactive Map**
 
-The Slideshow is also interactive for the user and connects with our map. When you first enter the website, the slideshow displays a welcome message and some basic information about the project. There are also simply instructions on how to navigate the site's Home Page and see student stories. As you click through the slideshow, you will see each respondent's open response survey questions on a different page. Clicking through also results in the map flying to each student's marker and displaying their full profile and story.
+Our Leaflet Map provides an interactive experience with our mapplication. It is centered around Santa Barbara, California and the markers are indicative of each residents' response and zip code. By hovering over and clicking on a zip code region, the residents' response will pop out in the side story panel displaying the respondent's experiences and challenges with civic engagement. The story panel categorizes the responses based on whether the respondent has a positive, negative, or neutral experience, or no experience. 
 
 3. **Menu Bar + Survey Button**
 
