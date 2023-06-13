@@ -59,10 +59,10 @@ The About page serves as a place where users can learn more details about the pr
 
 ### Screenshots
 **Santa Barbara Community Community Survey Welcome Page:**
-![Santa Barbara Community Community Survey Welcome Page](./img/WO_fullsite.png)
+![Santa Barbara Community Community Survey Welcome Page](./img/welcome.png)
 
 **Santa Barbara Community Community Survey Home Page:**
-![Santa Barbara Community Community Survey Home Page](./img/WO_map.png)
+![Santa Barbara Community Community Survey Home Page](./img/about.png)
 
 **Santa Barbara Community Community Survey About Page:**
 ![Santa Barbara Community Community Survey About Page](./img/WO_about.png)
