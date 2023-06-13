@@ -4,10 +4,10 @@
 
 ## Table of Contents
 * [Objective](#Objective)
-* [Who is being empowered?](#Who is being empowered?)
-* [What technology was used?](#What technology was used?)
+* ['Who is being empowered?'](#Who is being empowered?)
+* ['What technology was used?'](#What technology was used?)
 * [Screenshots](#screenshots)
-* [The Mapplication](#The Mapplication)
+* ['The Mapplication'](#The Mapplication)
 * [Acknowledgements](#acknowledgements)
 * [Contact](#contact)
 <!-- * [License](#license) -->
