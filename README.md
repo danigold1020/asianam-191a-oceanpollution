@@ -1,6 +1,6 @@
 # Oil Spills and Civic Engagement: Santa Barbara Community
 ### By Angelica Alcantar + Danielle Goldwirth + Enyi Emuka
-> Oil Spills and Civic Engagement: Santa Barbara Community is a mapplication (map application) project that displays Santa Barbara residents’ stories centered around civic engagement participation surrounding oil spills in their community. Through these stories, we hope to gain a deeper understanding of the community’s experiences in civic engagement involving oil spills or the barriers they have faced in trying to participate in civic engagement.
+> Oil Spills and Civic Engagement: Santa Barbara Community is a mapplication (map application) project that displays Santa Barbara residents’ stories centered around civic engagement participation surrounding oil spills in their community. Through these stories, we hope to gain a deeper understanding of the community’s experiences in civic engagement involving oil spills and the barriers they have faced in trying to participate in civic engagement.
 > This website functions best on Firefox.
 > Live demo [_here_](https://penelopelamb.github.io/wasted-opportunities/index.html).
 
