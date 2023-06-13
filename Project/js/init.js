@@ -126,6 +126,7 @@ loadData(dataUrl);
 // Add this script at the end to show the modal on page load
 document.addEventListener('DOMContentLoaded', (event) => {
   const modal = document.getElementById('myModal');
+  modal.innerHTML = 
   modal.style.display = 'block';
 
   const closeModal = () => {

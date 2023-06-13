@@ -1,0 +1,148 @@
+html{
+    scroll-behavior: smooth;
+ }
+ 
+ #intro{
+    padding-left: 200px;
+    padding-right: 200px;
+    font-size: 20px;
+ }
+ 
+ h1{
+    font-size: 45px;
+ }
+ 
+ 
+ #header{
+     padding: 10px;
+     padding-top: 170px;
+     padding-bottom: 200px;
+     text-align: center;
+     background-color: #addbd0;
+     color: #164a4a;
+     grid-area: header;
+     font-family: 'DM Sans', sans-serif;
+  }
+   
+ button{
+     font-size: 20px;
+     padding: 15px 32px;
+     margin: 5px;
+     background-color: #FAC898;
+     font-family: 'DM Sans', sans-serif;
+     cursor: pointer;
+     text-decoration: none;
+     border-radius: 10px;
+     margin: 1.5rem;
+     transition: all 0.5s ease;
+  }
+ 
+  button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    filter: brightness(110%);
+  }
+   
+ body{
+     display: grid;
+     grid-template-rows: auto auto auto;
+     grid-template-areas: "header" "main_content";
+     background-color: #f6efdc;
+     gap: 10px;
+  }
+   
+ 
+  #content{
+    grid-area: main_content;
+    display: grid;
+    grid-template-columns: .5fr .5fr;
+    grid-template-areas: "main_map sidebar";
+    /* add charts */
+    column-gap: 1%;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    padding-left: 3%;
+    padding-right: 3%;
+    
+ }
+   
+ 
+ #the_map{
+    height: 80vh;
+    grid-area: main_map;
+ }
+ 
+ 
+ #sidebar{ /*right side panel*/
+    grid-area: sidebar;
+    font-family: 'DM Sans', sans-serif;
+    /* background-color: #81b5a8; */
+    padding: 20px;
+    border-radius: 25px;
+    overflow-y: scroll;
+    height: 500px; 
+ 
+ }
+ 
+   
+ footer{
+    font-family: 'DM Sans', sans-serif;
+    background-color: #addbd0;
+    text-align: center;
+ }
+   
+   
+  #surveyButton a{
+     color: #212121;
+     text-decoration: none;
+  }
+   
+  
+ .question{
+    font-weight: bold;
+  } 
+ 
+  #about{
+    padding-top: 50px;
+    padding: 50px;
+    font-family: 'DM Sans', sans-serif;
+  }
+ 
+ /* The Modal (background) */
+ .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #f6efdc;;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 25px;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
