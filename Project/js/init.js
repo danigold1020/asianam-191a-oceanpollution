@@ -1,7 +1,7 @@
 // Declare variables
 let mapOptions = {
   'center': [34.5027, -120.0360],
-  'zoom': 11.5
+  'zoom': 10.45
 };
 
 // Define the leaflet map
