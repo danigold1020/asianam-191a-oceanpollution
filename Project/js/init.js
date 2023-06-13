@@ -106,8 +106,6 @@ function processData(results){
  }) 
   let allLayers = L.featureGroup([pos,neg,neu]);
   console.log(allLayers)
-  map.fitBounds(allLayers.getBounds());
-
   // step 1: turn allPoints into a turf.js featureCollection
   thePoints = turf.featureCollection(allPoints)
   // step 2: run the spatial analysis
@@ -225,6 +223,11 @@ function getBoundary(layer) {
     .then((sbzipcodes) => {
       boundary = sbzipcodes;
       collected = turf.collect(boundary, thePoints, 'surveyData', 'values');
+
+      // fit bounds for santa barbara zipcodes geojson
+      let sbZipcodeLayer = L.geoJson(boundary)
+      map.fitBounds(sbZipcodeLayer.getBounds(),{padding: [50,50]});
+
       console.log(collected.features);
       // here is the geoJson of the `collected` result:
       currentLayer = L.geoJson(collected, {
@@ -264,10 +267,10 @@ function getBoundary(layer) {
       
           return { color: color, stroke: false };
         }
-      });
+      }).addTo(map);
+    })
       
     // add the geojson to the map
-        }).addTo(map)
 }
 
 
