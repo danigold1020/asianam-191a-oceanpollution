@@ -23,11 +23,13 @@ Jawg_Light.addTo(map)
 let pos = L.featureGroup();
 let neg = L.featureGroup();
 let neu = L.featureGroup();
+let no = L.featureGroup();
 // define layers
 let layers = {
   "Positive Experience": pos,
   "Negative Experience": neg,
-  "Neutral Experience": neu
+  "Neutral Experience": neu,
+  "No Experience" : no
 }
 // Add layer control box
 L.control.layers(null,layers).addTo(map)
@@ -70,11 +72,19 @@ neg.addLayer(marker).bindPopup("Negative marker popup content")}
 
 else if (thisRow['How would you describe your overall experience in civic engagement?'] == "Neutral"){let marker = L.circleMarker([thisRow.lat,thisRow.lng],
   {"radius": 8,
-  "color": "#F5F5DC",
+  "color": "#00008B",
   "weight": 3,
   "opacity": 300})
 neu.addLayer(marker).bindPopup("Neutral marker popup content")
 console.log(neu)
+}
+else if (thisRow['How would you describe your overall experience in civic engagement?'] == "No"){let marker = L.circleMarker([thisRow.lat,thisRow.lng],
+  {"radius": 8,
+  "color": "#964B00",
+  "weight": 3,
+  "opacity": 300})
+no.addLayer(marker).bindPopup("No marker popup content")
+console.log(no)
 }
 return
 }
@@ -103,8 +113,10 @@ function processData(data){
   neg.addTo(map) // add our layers after markers have been made
   console.log(neu)
   neu.addTo(map)
+  no.addTo(map)
+  console.log(no)
  }) 
-  let allLayers = L.featureGroup([pos,neg,neu]);
+  let allLayers = L.featureGroup([pos,neg,neu,no]);
   console.log(allLayers)
   //map.fitBounds(allLayers.getBounds())
   ;
@@ -184,7 +196,14 @@ function populateSidebar(h){
     s.style.borderRadius = "10px";
   }
   for (const s of document.getElementsByClassName("neuStory")) {
-    s.style.backgroundColor = 'F5F5DC';
+    s.style.backgroundColor = '#00008B';
+    s.style.padding = "10px";
+    s.style.margin = "10px";
+    s.style.borderRadius = "10px";
+    
+  }
+  for (const s of document.getElementsByClassName("noStory")) {
+    s.style.backgroundColor = '#964B00';
     s.style.padding = "10px";
     s.style.margin = "10px";
     s.style.borderRadius = "10px";
@@ -217,9 +236,14 @@ function addToStoryContent(thisRow){
     <p>${thisRow.motivation}<p>
     <b>Story</b>
     <p>${thisRow.participateDesc}</p></div>`; 
-  }    
+  }
+  else if (thisRow['How would you describe your overall experience in civic engagement?'] == "No"){ //if have no experience
+    document.getElementById("stories").innerHTML += `<div class="noStory">
+    <b>if you'd like, please describe your reasons for not participating</b>
+    <p>${thisRow.surveyNo}<p>
+    </div>`;     
 }
-
+}
 // New function to get the boundary layer and add data to it with turf.js
 function getBoundary() {
   fetch(boundaryLayer)
