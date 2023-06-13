@@ -91,6 +91,17 @@ nav ul li a {
   padding: 20px;
 }
 
+#sidebar{ /*right side panel*/
+  grid-area: sidebar;
+  font-family: 'DM Sans', sans-serif;
+  /* background-color: #81b5a8; */
+  padding: 20px;
+  border-radius: 25px;
+  overflow-y: scroll;
+  height: 500px; 
+
+}
+
 /* Filter container styles */
 #filter-container {
   margin-top: 20px;

@@ -85,13 +85,13 @@ function loadData(url){
   Papa.parse(url, {
     header: true,
     download: true,
-    complete: results => processData(results)
+    complete: results => processData(results.data)
     })
-}
+};
 
-function processData(results){
-  console.log('Data:', results); 
-  results.data.forEach(thisRow => {
+function processData(data){
+  //console.log('Data:', results); 
+  data.forEach((thisRow) => {
     console.log('lat:', thisRow.lat);
     console.log('lng:', thisRow.lng);
     console.log('sentiment:', thisRow.feels)
@@ -106,7 +106,8 @@ function processData(results){
  }) 
   let allLayers = L.featureGroup([pos,neg,neu]);
   console.log(allLayers)
-  map.fitBounds(allLayers.getBounds());
+  //map.fitBounds(allLayers.getBounds())
+  ;
 
   // step 1: turn allPoints into a turf.js featureCollection
   thePoints = turf.featureCollection(allPoints)
@@ -140,10 +141,10 @@ function highlightFeature(h) {
 // Function for clicking on polygons and showing number of responses
 function onEachFeature(feature, layer) {
   console.log(feature.properties)
-  if (feature.properties.values) {
+  if (feature.properties.values.length > 0) {
     // Count the values within the polygon by using .length on the values array created from turf.js collect
   let count = feature.properties.values.length
-  let targetZcta = layer.feature.properties.zcta
+  let targetZcta = feature.properties.zcta
     console.log(count) //see count on click
     let text = count.toString(); // Convert it to a string
     layer.bindPopup ('Zipcode' + targetZcta + ': ' + text + 'Survey Responses'); // Bind the pop up to the number
@@ -160,7 +161,7 @@ function onEachFeature(feature, layer) {
 function populateSidebar(h){
   let layer = h.target;
 
-  let targetZcta = layer.feature.properties.zcta
+  let targetZcta = feature.properties.zcta
   let numOfStories = layer.feature.properties.values.length
   document.getElementById("stories").innerHTML = '<h2 style="text-align: center;">' + targetZcta + '</h2>';
   document.getElementById("stories").innerHTML += '<h3 style="text-align: center;">(' + numOfStories + ' Responses)</h3>';
@@ -219,8 +220,8 @@ function addToStoryContent(thisRow){
 }
 
 // New function to get the boundary layer and add data to it with turf.js
-function getBoundary(layer) {
-  fetch(layer)
+function getBoundary() {
+  fetch(boundaryLayer)
     .then((response) => response.json())
     .then((sbzipcodes) => {
       boundary = sbzipcodes;
@@ -259,15 +260,16 @@ function getBoundary(layer) {
             color = "#008000"; // Replace with desired color
           } else {
             // Make the polygon gray and blend in with basemap if it doesn't have any values
-            color = "#efefef";
+            color = "#000000";
           }
       
           return { color: color, stroke: false };
         }
       });
+      currentLayer.addTo(map)
       
     // add the geojson to the map
-        }).addTo(map)
+        });
 }
 
 
