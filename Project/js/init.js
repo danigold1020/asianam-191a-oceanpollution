@@ -159,7 +159,7 @@ function onEachFeature(feature, layer) {
   let targetZcta = layer.feature.properties.zcta
     console.log(count) //see count on click
     let text = count.toString(); // Convert it to a string
-    layer.bindPopup ('Zipcode' + targetZcta + ': ' + text + 'Survey Responses'); // Bind the pop up to the number
+    // layer.bindPopup ('Zipcode' + targetZcta + ': ' + text + 'Survey Responses'); // Bind the pop up to the number
    //console.log("Zipcode: " + feature.properties.zcta + " has " + count + " points");
    // console.log(feature.properties.values); // See what the count is on click
   }
