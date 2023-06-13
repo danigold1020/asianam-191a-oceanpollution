@@ -57,22 +57,23 @@ if(thisRow.feels == "Positive"){
        "color": "#228B22",
        "weight": 3,
        "opacity": 500})
-pos.addLayer(marker).bindPopup()
-console.log(pos); // Check if pos feature group contains markers
+       console.log(pos); // Check if pos feature group contains markers
+pos.addLayer(marker).bindPopup("Positive marker popup content")
+
 }
 else if (thisRow.feels == "Negative"){let marker = L.circleMarker([thisRow.lat,thisRow.lng],
   {"radius": 8,
   "color": "#FF6961",
   "weight": 3,
   "opacity": 300})
-neg.addLayer(marker).bindPopup()}
+neg.addLayer(marker).bindPopup("Negative marker popup content")}
 
 else if (thisRow.feels == "Neutral"){let marker = L.circleMarker([thisRow.lat,thisRow.lng],
   {"radius": 8,
   "color": "#F5F5DC",
   "weight": 3,
   "opacity": 300})
-neu.addLayer(marker).bindPopup()
+neu.addLayer(marker).bindPopup("Neutral marker popup content")
 console.log(neu)
 }
 return
@@ -96,13 +97,15 @@ function processData(results){
     console.log('sentiment:', thisRow.feels)
     console.log(thisRow)
     addMarker(thisRow)
-  })
+  
   pos.addTo(map) // add our layers after markers have been made
   console.log(pos); // Check if pos feature group contains markers
   neg.addTo(map) // add our layers after markers have been made
   console.log(neu)
   neu.addTo(map)
+ }) 
   let allLayers = L.featureGroup([pos,neg,neu]);
+  console.log(allLayers)
   map.fitBounds(allLayers.getBounds());
 
   // step 1: turn allPoints into a turf.js featureCollection
