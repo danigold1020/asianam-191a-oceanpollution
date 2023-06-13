@@ -2,21 +2,27 @@
 <html>
 <head>
   <title>SB Oil Spills</title>
-  
   <meta charset="utf-8" />
   <link rel="shortcut icon" href="#">
   <link rel="stylesheet" href="styles/style.css">
 
-   <!-- Leaflet's css-->
-   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
-   <!-- Leaflet's JavaScript-->
-   <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
-    <!-- Adding the TurfJs library  -->
-    <script src='https://unpkg.com/@turf/turf@6.3.0/turf.min.js'></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
-   <script src="https://unpkg.com/geojson-vt@3.2.0/geojson-vt.js"></script>
+  <!-- Leaflet's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+
+  <!-- Leaflet's JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
+
+  <!-- Adding the TurfJs library  -->
+  <script src='https://unpkg.com/@turf/turf@6.3.0/turf.min.js'></script>
+
+  <!-- PapaParse library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+
+  <!-- geojson-vt library -->
+  <script src="https://unpkg.com/geojson-vt@3.2.0/geojson-vt.js"></script>
+
   <style>
-   
+    /* Place any additional styles here */
   </style>
 </head>
 <body>
@@ -24,16 +30,17 @@
     <h1><span style="color: #311d03">Santa Barbara Community Survey: Oil Spills and Civic Engagement</span></h1>
     <nav>
       <ul>
-        <li><a href=index.html><span style="color: #492c07">Home</span></a></li>
-        <li><a href=about.html><span style="color: #492c07">About Project</span></a></li>
-        <li><a href=https://docs.google.com/forms/d/e/1FAIpQLSdAv4MqD11Qdh8DybMXtSOVRfmqnRJAwASY8I6r1etLCnvnKw/viewform><span style="color: #492c07">Take Survey</span></a></li>
+        <li><a href="index.html"><span style="color: #492c07">Home</span></a></li>
+        <li><a href="about.html"><span style="color: #492c07">About Project</span></a></li>
+        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdAv4MqD11Qdh8DybMXtSOVRfmqnRJAwASY8I6r1etLCnvnKw/viewform"><span style="color: #492c07">Take Survey</span></a></li>
         <li><a href="mailto:sboilspills@gmail.com"><span style="color: #492c07">Contact Us</span></a></li>
       </ul>
     </nav>
   </header>
-  <div id="myModal" class="modal2">
+
+  <div id="myModal" class="modal">
     <!-- Modal content -->
-    <div class="modal-content2">
+    <div class="modal-content">
       <span class="close">&times;</span>
       <h1><span style="color: #311d03">Welcome to our mapplication!</span></h1>
       <p><span style="color: #311d03">Hello! We are a group of three UCLA students enrolled in Asian American Studies 191A, a Web Development and GIS for Social Change class. Our project aims to uplift residents of Santa Barbara, California by providing a platform for local residents to share stories of their experiences in <b>civic engagement regarding oil spills</b> and the barriers they have faced in trying to do so. We invite you to navigate through our map to read stories of Santa Barbara community members or to share your own story.</span></p>
@@ -49,14 +56,18 @@
     <div id="sidebar">
       <div id="stories">
         <h2>Click on a region to read different stories!</h2>
-      </div>
-   </div>
+        <p>Some text or other elements can go here...</p>
 
-   <footer>
-    <p>Copyright © 2023. All rights reserved.<br>
-        Questions, comments, concerns?
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>
+      <a href="mailto:sboilspills@gmail.com">Contact Us</a>
+      <br>
+      &copy; 2023. All rights reserved.
     </p>
-    <a href="mailto:sboilspills@gmail.com"><button>Contact Us</button></a>
   </footer>
 
 <script src="js/init.js"></script>
