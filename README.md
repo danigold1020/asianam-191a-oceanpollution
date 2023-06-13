@@ -28,7 +28,7 @@ To create the website and mapplication itself, we utilzed 2 main HTML files, 1 C
 ### What technical and ethical problems could there be in developing this tool?
 Since we narrowed our scope to focus only on residents of Santa Barbara County, this smaller, more convenient sample in California may provide stories that don't represent perspectives of other communities dealing with the threat of oil spills. There are a wide variety of stories and experiences regarding oil spills and pollution around the world, so we acknowledge that the current community of focus displays a biased archive of stories regarding civic engagement experiences in Santa Barbara.
 
-## :seedling:How it can be repurposed?
+## :seedling:How can it be repurposed?
 ### Long-term Impact
 We hope that this project will bring awareness to UCLA’s zero waste goals. Our map filled with waste ‘profiles’ of the community will provide anecdotes and insight as to why UCLA is missing its zero waste target. By surveying a variety of student community members, we hope to make a diverse map displaying people's perceptions, habits, and relationships to waste reduction, which could help explain the lack of compliance with UCLA’s waste reduction efforts and spark more interest in reducing waste. The mapplication could be distributed to UCLA’s Environmental Student Network and the sustainability team of the housing association, where it could be shared along with current waste reduction infographics on the hill. We can also provide our mapplication to UCLA Sustainability’s Zero Waste team so that they are better informed about student waste habits.
 
