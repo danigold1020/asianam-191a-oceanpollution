@@ -57,22 +57,23 @@ if(thisRow.feels == "Positive"){
        "color": "#228B22",
        "weight": 3,
        "opacity": 500})
-pos.addLayer(marker).addTo(map)
+pos.addLayer(marker).bindPopup()
+console.log(pos); // Check if pos feature group contains markers
 }
 else if (thisRow.feels == "Negative"){let marker = L.circleMarker([thisRow.lat,thisRow.lng],
   {"radius": 8,
   "color": "#FF6961",
   "weight": 3,
   "opacity": 300})
-neg.addLayer(marker).addTo(map)}
+neg.addLayer(marker).bindPopup()}
 
 else if (thisRow.feels == "Neutral"){let marker = L.circleMarker([thisRow.lat,thisRow.lng],
   {"radius": 8,
   "color": "#F5F5DC",
   "weight": 3,
   "opacity": 300})
-neu.addLayer(marker).addTo(map)
-
+neu.addLayer(marker).bindPopup()
+console.log(neu)
 }
 return
 }
@@ -88,13 +89,18 @@ function loadData(url){
 }
 
 function processData(results){
-  console.log(results)
+  console.log('Data:', results); 
   results.data.forEach(thisRow => {
+    console.log('lat:', thisRow.lat);
+    console.log('lng:', thisRow.lng);
+    console.log('sentiment:', thisRow.feels)
     console.log(thisRow)
     addMarker(thisRow)
   })
   pos.addTo(map) // add our layers after markers have been made
+  console.log(pos); // Check if pos feature group contains markers
   neg.addTo(map) // add our layers after markers have been made
+  console.log(neu)
   neu.addTo(map)
   let allLayers = L.featureGroup([pos,neg,neu]);
   map.fitBounds(allLayers.getBounds());
