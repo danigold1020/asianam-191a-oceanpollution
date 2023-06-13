@@ -39,7 +39,7 @@ By highlighting the stories of the Santa Barbara community, our mapplication ser
 ### Features
 1. **Interactive Map**
 
-Our Leaflet Map provides an interactive experience with our mapplication. It is centered around Santa Barbara, California and the markers are indicative of each residents' response and zip code. By clicking on a zip code region, the residents' response will pop out in the side panel displaying the respondent's experiences and challenges with civic engagement. 
+Our Leaflet Map provides an interactive experience with our mapplication. It is centered around Santa Barbara, California and the markers are indicative of each residents' response and zip code. By clicking on a zip code region, the residents' response will pop out in the side story panel displaying the respondent's experiences and challenges with civic engagement. The story panel categorizes the responses based on whether the respondent has a positive, negative, or neutral experience, or no experience. 
 
 2. **Slideshow**
 
