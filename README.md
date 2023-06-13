@@ -47,13 +47,9 @@ The Slideshow is also interactive for the user and connects with our map. When y
 
 3. **Menu Bar + Survey Button**
 
-The menu bar at the top of the mapplication allows for easy navigation between the Home page and About page. It also holds our 'Add Your Story' button, which leads users to the survey we built for this project.
+Our menu bar located at the top of the mapplication allows for an easy navigation experience between our Home page and About page, while also giving users and community members an opportunity to share their story through our Take Survey button and to email us through our Contact Us button. 
 
-4. **Descriptions**
-
-Underneath our map and slideshow, there are descriptions to the project and UCLA Zero Waste. Along with these descriptions, there are links to find out more about both topics.
-
-5. **About Page**
+4. **About Page**
 
 We included an About page to enable users to learn more details about our project's objectives and long-term impact, as well as provide insight into how others can use this project in the future. 
 
