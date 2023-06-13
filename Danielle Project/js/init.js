@@ -209,9 +209,18 @@ function populateSidebar(h){
     s.style.borderRadius = "10px";
     
   }
+  for (const s of document.getElementsByClassName("noStory")) {
+    s.style.backgroundColor = 'orange';
+    s.style.padding = "10px";
+    s.style.margin = "10px";
+    s.style.borderRadius = "10px";
+    
+  }
 }
 
 function addToStoryContent(thisRow){
+
+  if (thisRow.Experienced == "Yes"){
 
   if(thisRow.feels == 'Positive'){ //if experience was positive
 
@@ -236,6 +245,12 @@ function addToStoryContent(thisRow){
     <b>Story</b>
     <p>${thisRow.participateDesc}</p></div>`; 
   }    
+} else{
+    document.getElementById("stories").innerHTML += `<div class="noStory">
+    <b>If you'd like, please tell us more about any challenges or barriers you may have faced.</b>
+    <b>Why Not?</b>
+    <p>${thisRow.surveyNo}</p></div>`; 
+}
 }
 
 // New function to get the boundary layer and add data to it with turf.js
