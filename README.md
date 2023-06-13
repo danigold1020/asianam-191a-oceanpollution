@@ -38,9 +38,10 @@ By highlighting the stories of the Santa Barbara community, our mapplication ser
 ## :ocean:The Mapplication
 ### Features
 1. **Welcome Pop-Up**
+
 Upon opening our website, users will see our welcome pop-up which we included to help users quickly learn about our team and project goals, and how to start navigating through our website. We invite users to navigate through our map to read stories of Santa Barbara community members or share their own story with us.
 
-2. **Interactive Map**
+3. **Interactive Map**
 
 Our Leaflet Map provides an interactive experience with our mapplication. It is centered around Santa Barbara, California and the markers are indicative of each residents' response and zip code. By hovering over and clicking on a zip code region, the residents' response will pop out in the side story panel displaying the respondent's experiences and challenges with civic engagement. The story panel categorizes the responses based on whether the respondent has a positive, negative, or neutral experience, or no experience. 
 
