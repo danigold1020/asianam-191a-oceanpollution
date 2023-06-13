@@ -3,19 +3,20 @@
 > Live demo [_here_](https://www.example.com). <!-- If you have the project hosted somewhere, include the link here. -->
 
 ## Table of Contents
-* [General Info](#general-information)
-* [Technologies Used](#technologies-used)
-* [Features](#features)
+* [Objective](#Objective)
+* [Who is being empowered?](#Who is being empowered?)
+* [What technology was used?](#What technology was used?)
 * [Screenshots](#screenshots)
-* [Setup](#setup)
-* [Usage](#usage)
-* [Project Status](#project-status)
-* [Room for Improvement](#room-for-improvement)
+* [The Mapplication](#The Mapplication)
 * [Acknowledgements](#acknowledgements)
 * [Contact](#contact)
 <!-- * [License](#license) -->
 
-
+Objective
+Who is being empowered?
+What technology was used?
+How it can be repurposed?
+The Mapplication
 ## General Information
 - In Santa Barbara County, there are around 100 active oil and gas wells and 1,778 idle wells that pose environmental and health risks.
 - The Santa Barbara County Grand Jury found that the risks are not being addressed due to lack of adequate oversight.
