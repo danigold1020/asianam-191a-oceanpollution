@@ -26,7 +26,7 @@ In this project, we used Google Forms to create our community survey and multipl
 To create the website and mapplication itself, we utilzed 2 main HTML files, 1 CSS file, and 2 Javascript files. Our HTML files were for our Home and About pages. We connected the CSS and Javascript files to these main HTML files to incorporate style elements and our interactive map and slideshow features.
 
 ### What technical and ethical problems could there be in developing this tool?
-Since we narrowed our scope to focus only on residents of Santa Barbara County, this smaller, more convenient sample in California may provide stories that don't represent perspectives of other communities dealing with the threat of oil spills. There are a wide variety of stories and experiences regarding oil spills and pollution around the world. Some technical problems that could occur are issues with mostly blank survey responses. 
+Since we narrowed our scope to focus only on residents of Santa Barbara County, this smaller, more convenient sample in California may provide stories that don't represent perspectives of other communities dealing with the threat of oil spills. There are a wide variety of stories and experiences regarding oil spills and pollution around the world, so we acknowledge that the current community of focus displays a biased archive of stories regarding civic engagement experiences in Santa Barbara.
 
 ## :seedling:How it can be repurposed?
 ### Long-term Impact
