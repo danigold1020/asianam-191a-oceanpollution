@@ -18,13 +18,10 @@ In Santa Barbara, California there are around 100 active oil and gas wells and 1
 We hope to address this issue with our mapplication and showcase Santa Barbara community voices on the challenges around serving as a public voice or trying to do so. Ultimately, we hope to assist Santa Barbara in understanding the community’s reasons for participating in civic engagement (and their experiences in doing so) and the barriers to participating in civic engagement involving oil spills. 
 
 ## :seedling:Who is being empowered?
-Our project will empower the general UCLA student community, including both current and future Bruins, as both groups will benefit from increased awareness about waste habits, reduction, and impact. Community members concerned about sustainability and waste reduction, as well as those less aware of the consistent waste problem will have their voices and personal experiences shared. Additionally, students living on and off-campus will be able to share their experiences, accounting for the varying habits and resources available for the two groups.
-
-## :seedling:Who is being empowered?
-Our project will empower the general UCLA student community, including both current and future Bruins, as both groups will benefit from increased awareness about waste habits, reduction, and impact. Community members concerned about sustainability and waste reduction, as well as those less aware of the consistent waste problem will have their voices and personal experiences shared. Additionally, students living on and off-campus will be able to share their experiences, accounting for the varying habits and resources available for the two groups.
+Our project will empower the residents of Santa Barbara County, especially community members concerned about local sources of oil pollution and future oil spills, as well as those less aware of the consistent waste problem will have their voices and personal experiences shared. Additionally, students living on and off-campus will be able to share their experiences, accounting for the varying habits and resources available for the two groups.
 
 ## :seedling:What technology was used?
-In this project, we will be using software such as Leaflet and Papaparse to create our map and import in our survey data. Moreover, we will be utilizing multiple programming languages: HTML, CSS, and Javascript, to create our mapplication.
+To create our mapplication, we used multiple programming languages: HTML, CSS, and Javascript. We also used software such as Leaflet and Papaparse to create our map and import our community survey data.  
 
 To create the website and mapplication itself, we utilzed 2 main HTML files, 1 CSS file, and 2 Javascript files. Our HTML files were for our Home and About pages. We connected the CSS and Javascript files to these main HTML files to incorporate style elements and our interactive map and slideshow features.
 
