@@ -1,7 +1,7 @@
 // Declare variables
 let mapOptions = {
   'center': [34.5027, -120.0360],
-  'zoom': 11.5
+  'zoom': 10.45
 };
 
 // Define the leaflet map
@@ -23,11 +23,13 @@ Jawg_Light.addTo(map)
 let pos = L.featureGroup();
 let neg = L.featureGroup();
 let neu = L.featureGroup();
+let no = L.featureGroup();
 // define layers
 let layers = {
   "Positive Experience": pos,
   "Negative Experience": neg,
-  "Neutral Experience": neu
+  "Neutral Experience": neu,
+  "No Experience" : no
 }
 // Add layer control box
 L.control.layers(null,layers).addTo(map)
@@ -50,7 +52,7 @@ console.log(thisPoint)
 // Put all the turfJS points into `allPoints`
 allPoints.push(thisPoint);
 
-if(thisRow.feels == "Positive"){ 
+if(thisRow['How would you describe your overall experience in civic engagement?'] == "Positive"){ 
 
  let marker = L.circleMarker([thisRow.lat,thisRow.lng],
        {"radius": 8,
@@ -61,20 +63,28 @@ if(thisRow.feels == "Positive"){
 pos.addLayer(marker).bindPopup("Positive marker popup content")
 
 }
-else if (thisRow.feels == "Negative"){let marker = L.circleMarker([thisRow.lat,thisRow.lng],
+else if (thisRow['How would you describe your overall experience in civic engagement?'] == "Negative"){let marker = L.circleMarker([thisRow.lat,thisRow.lng],
   {"radius": 8,
   "color": "#FF6961",
   "weight": 3,
   "opacity": 300})
 neg.addLayer(marker).bindPopup("Negative marker popup content")}
 
-else if (thisRow.feels == "Neutral"){let marker = L.circleMarker([thisRow.lat,thisRow.lng],
+else if (thisRow['How would you describe your overall experience in civic engagement?'] == "Neutral"){let marker = L.circleMarker([thisRow.lat,thisRow.lng],
   {"radius": 8,
-  "color": "#F5F5DC",
+  "color": "#00008B",
   "weight": 3,
   "opacity": 300})
 neu.addLayer(marker).bindPopup("Neutral marker popup content")
 console.log(neu)
+}
+else if (thisRow['How would you describe your overall experience in civic engagement?'] == "No"){let marker = L.circleMarker([thisRow.lat,thisRow.lng],
+  {"radius": 8,
+  "color": "#964B00",
+  "weight": 3,
+  "opacity": 300})
+no.addLayer(marker).bindPopup("No marker popup content")
+console.log(no)
 }
 return
 }
@@ -85,16 +95,16 @@ function loadData(url){
   Papa.parse(url, {
     header: true,
     download: true,
-    complete: results => processData(results)
+    complete: results => processData(results.data)
     })
-}
+};
 
-function processData(results){
-  console.log('Data:', results); 
-  results.data.forEach(thisRow => {
+function processData(data){
+  //console.log('Data:', results); 
+  data.forEach((thisRow) => {
     console.log('lat:', thisRow.lat);
     console.log('lng:', thisRow.lng);
-    console.log('sentiment:', thisRow.feels)
+    console.log('feels:', thisRow['How would you describe your overall experience in civic engagement?'])
     console.log(thisRow)
     addMarker(thisRow)
   
@@ -103,10 +113,13 @@ function processData(results){
   neg.addTo(map) // add our layers after markers have been made
   console.log(neu)
   neu.addTo(map)
+  no.addTo(map)
+  console.log(no)
  }) 
-  let allLayers = L.featureGroup([pos,neg,neu]);
+  let allLayers = L.featureGroup([pos,neg,neu,no]);
   console.log(allLayers)
-  map.fitBounds(allLayers.getBounds());
+  //map.fitBounds(allLayers.getBounds())
+  ;
 
   // step 1: turn allPoints into a turf.js featureCollection
   thePoints = turf.featureCollection(allPoints)
@@ -140,9 +153,9 @@ function highlightFeature(h) {
 // Function for clicking on polygons and showing number of responses
 function onEachFeature(feature, layer) {
   console.log(feature.properties)
-  if (feature.properties.values) {
+  if (feature.properties.values.length > 0) {
     // Count the values within the polygon by using .length on the values array created from turf.js collect
-  let count = feature.properties.values.length
+  let count = layer.feature.properties.values.length
   let targetZcta = layer.feature.properties.zcta
     console.log(count) //see count on click
     let text = count.toString(); // Convert it to a string
@@ -166,7 +179,7 @@ function populateSidebar(h){
   document.getElementById("stories").innerHTML += '<h3 style="text-align: center;">(' + numOfStories + ' Responses)</h3>';
 
   let stories = layer.feature.properties.values
-  stories.forEach(story => addToStoryContent(story))
+  
 
      //add styling to story divs
   for (const s of document.getElementsByClassName("posStory")) {
@@ -183,17 +196,25 @@ function populateSidebar(h){
     s.style.borderRadius = "10px";
   }
   for (const s of document.getElementsByClassName("neuStory")) {
-    s.style.backgroundColor = 'F5F5DC';
+    s.style.backgroundColor = '#00008B';
     s.style.padding = "10px";
     s.style.margin = "10px";
     s.style.borderRadius = "10px";
     
   }
+  for (const s of document.getElementsByClassName("noStory")) {
+    s.style.backgroundColor = '#964B00';
+    s.style.padding = "10px";
+    s.style.margin = "10px";
+    s.style.borderRadius = "10px";
+    
+  }
+  stories.forEach(story => addToStoryContent(story));
 }
 
 function addToStoryContent(thisRow){
 
-  if(thisRow.feels == 'Positive'){ //if experience was positive
+  if(thisRow['How would you describe your overall experience in civic engagement?'] == 'Positive'){ //if experience was positive
 
     document.getElementById("stories").innerHTML += `<div class="posStory">
     <b>We're happy your experience was positive, if you'd like, please describe your motivations for participation</b>
@@ -202,25 +223,30 @@ function addToStoryContent(thisRow){
     <p>${thisRow.participateDesc}</p></div>`; 
 
   }
-  else if (thisRow.feels == "Neutral"){ //if experience was neutral
+  else if (thisRow['How would you describe your overall experience in civic engagement?'] == "Neutral"){ //if experience was neutral
     document.getElementById("stories").innerHTML += `<div class="neuStory">
     <b>If you'd like, please describe your motivations for participation</b>
     <p>${thisRow.motivation}<p>
     <b>Story</b>
     <p>${thisRow.participateDesc}</p></div>`; 
   }
-  else if (thisRow.feels == "Negative"){ //if experience was negative
+  else if (thisRow['How would you describe your overall experience in civic engagement?'] == "Negative"){ //if experience was negative
     document.getElementById("stories").innerHTML += `<div class="negStory">
     <b>We're sorry to hear your experience was negative, if you'd like, please describe your motivations for participation</b>
     <p>${thisRow.motivation}<p>
     <b>Story</b>
     <p>${thisRow.participateDesc}</p></div>`; 
-  }    
+  }
+  else if (thisRow['How would you describe your overall experience in civic engagement?'] == "No"){ //if have no experience
+    document.getElementById("stories").innerHTML += `<div class="noStory">
+    <b>if you'd like, please describe your reasons for not participating</b>
+    <p>${thisRow.surveyNo}<p>
+    </div>`;     
 }
-
+}
 // New function to get the boundary layer and add data to it with turf.js
-function getBoundary(layer) {
-  fetch(layer)
+function getBoundary() {
+  fetch(boundaryLayer)
     .then((response) => response.json())
     .then((sbzipcodes) => {
       boundary = sbzipcodes;
@@ -259,15 +285,16 @@ function getBoundary(layer) {
             color = "#008000"; // Replace with desired color
           } else {
             // Make the polygon gray and blend in with basemap if it doesn't have any values
-            color = "#efefef";
+            color = "#000000";
           }
       
           return { color: color, stroke: false };
         }
       });
+      currentLayer.addTo(map)
       
     // add the geojson to the map
-        }).addTo(map)
+        });
 }
 
 
