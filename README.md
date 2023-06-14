@@ -2,7 +2,7 @@
 ### By Angelica Alcantar + Danielle Goldwirth + Enyi Emuka
 > Oil Spills and Civic Engagement: Santa Barbara Community is a mapplication (map application) project that displays Santa Barbara residents’ stories centered around civic engagement participation surrounding oil spills in their community. Through these stories, we hope to gain a deeper understanding of the community’s experiences in civic engagement involving oil spills and the barriers they have faced in trying to participate in civic engagement.
 > This website functions best on Firefox.
-> Live demo [_here_](https://penelopelamb.github.io/wasted-opportunities/index.html).
+> Live demo [_here_](https://danigold1020.github.io/asianam-191a-oceanpollution/Project/index.html).
 
 ## Table of Contents
 * [Objective](#oceanobjective)
@@ -23,7 +23,7 @@ Our project will empower the residents of Santa Barbara County, especially commu
 ## :ocean:What technology was used?
 In this project, we used Google Forms to create our community survey and multiple programming languages (HTML, CSS, and Javascript) to create our mapplication. We also used software such as Leaflet and Papaparse to create our map and import our community survey data, as well as Google Sheets and Google Apps Script for geocoding. 
 
-To create the website and mapplication itself, we utilzed 2 main HTML files, 1 CSS file, and 2 Javascript files. Our HTML files were for our Home and About pages. We connected the CSS and Javascript files to these main HTML files to incorporate style elements and our interactive map and slideshow features.
+To create the website and mapplication itself, we utilzed 2 main HTML files, 1 CSS file, 1 Javascript files, and 1 geojson file. Our HTML files were for our Home and About pages. To add our style elements, the map, and story side panel, we connected the CSS and Javascript files to our 2 main HTML files.
 
 ### What technical and ethical problems could there be in developing this tool?
 Since we narrowed our scope to focus only on residents of Santa Barbara County, this smaller, more convenient sample in California may provide stories that don't represent perspectives of other communities dealing with the threat of oil spills. There are a wide variety of stories and experiences regarding oil spills and pollution around the world, so we acknowledge that the current community of focus displays a biased archive of stories regarding civic engagement experiences in Santa Barbara.
@@ -37,35 +37,32 @@ By highlighting the stories of the Santa Barbara community, our mapplication ser
 
 ## :ocean:The Mapplication
 ### Features
-1. **Interactive Map**
+**1. Welcome Pop-Up**
 
-The Leaflet Map is very interactive for the user. It is centered around UCLA's campus, and the markers are indicative of each student response and where they live. By clicking on a marker, the map will fly to that marker and it will be the only marker highlighted. Furthermore, clicking a marker creates a pop-up displaying the respondent's profile, including Major and Campus Affiliations. The slideshow to the right of the map also changes to that respondent's survey answers, creating a full story for this community member. 
+Upon opening our website, users will see our welcome pop-up which we included to help users quickly learn about our team and project goals, and how to start navigating through our website. We invite users to navigate through our map to read stories of Santa Barbara community members or share their own story with us.
 
-2. **Slideshow**
+**2. Interactive Map**
 
-The Slideshow is also interactive for the user and connects with our map. When you first enter the website, the slideshow displays a welcome message and some basic information about the project. There are also simply instructions on how to navigate the site's Home Page and see student stories. As you click through the slideshow, you will see each respondent's open response survey questions on a different page. Clicking through also results in the map flying to each student's marker and displaying their full profile and story.
+Our Leaflet Map provides an interactive experience with our mapplication. It is centered around Santa Barbara, California and the markers are indicative of each residents' response and zip code. By hovering over and clicking on a zip code region, the residents' response will pop out in the side story panel displaying the respondent's experiences and challenges with civic engagement. The story panel categorizes the responses based on whether the respondent has a positive, negative, or neutral experience, or no experience. 
 
-3. **Menu Bar + Survey Button**
+**3. Menu Bar + Survey Button**
 
-The menu bar at the top of the mapplication allows for easy navigation between the Home page and About page. It also holds our 'Add Your Story' button, which leads users to the survey we built for this project.
+Our menu bar located at the top of the mapplication allows for an easy navigation experience between our Home page and About page, while also giving users and community members an opportunity to share their story through our Take Survey button and to email us through our Contact Us button. 
 
-4. **Descriptions**
+**4. About Page**
 
-Underneath our map and slideshow, there are descriptions to the project and UCLA Zero Waste. Along with these descriptions, there are links to find out more about both topics.
-
-5. **About Page**
-
-The About page serves as a place where users can learn more details about the project without taking space away or distracting from the main map feature on the Home page.
+We included an About page to enable users to learn more details about our project's objectives and long-term impact, as well as provide insight into how others can use this project in the future. 
 
 ### Screenshots
-**Wasted Opportunities Home Page:**
-![Wasted Opportunities Home Page](./img/WO_fullsite.png)
+**Santa Barbara Community Survey Welcome Page:**
+<img width="1440" alt="welcome" src="https://github.com/danigold1020/asianam-191a-oceanpollution/assets/73193396/8b22ece2-c625-4c5e-a9e9-fd8687df1ab2">
 
-**Wasted Opportunities Map Feature & Slideshow, Student Profile:**
-![Wasted Opportunities Map Feature](./img/WO_map.png)
+**Santa Barbara Community Survey Home Page:**
+<img width="1440" alt="home" src="https://github.com/danigold1020/asianam-191a-oceanpollution/assets/73193396/7f67f3de-8c9f-48b0-8c16-7d32ce5a661c">
 
-**Wasted Opportunities About Page:**
-![Wasted Opportunities About Page](./img/WO_about.png)
+
+**Santa Barbara Community Survey About Page:**
+<img width="1440" alt="about" src="https://github.com/danigold1020/asianam-191a-oceanpollution/assets/73193396/f1c2bad0-79d7-4acd-81cf-619cfafe125a">
 
 ## Acknowledgements
 - We created this project as part of the AAS191A: Web Development and GIS for Social Change course at UCLA.
