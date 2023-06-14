@@ -86,8 +86,8 @@ header ul li a {
 
 #sidebar {
   flex: 0 0 300px; /* Adjust the width of the sidebar as needed */
-  background-color: #804e0e;
-  color: white;
+  background-color: #ede5d5;
+  color: black;
   padding: 20px;
   overflow-y: auto; /* Enable vertical scrolling if needed */
 }
@@ -98,23 +98,27 @@ header ul li a {
   height: calc(100% - 40px);
 }
 .posStory {
-  background-color: #AACFA0;
+  background-color: #cff7b9;
   /* other styling properties */
+  padding: 20px;
 }
 
 .negStory {
-  background-color: #F0939B;
+  background-color: #f2b2a4;
   /* other styling properties */
+  padding: 20px;
 }
 
 .neuStory {
-  background-color: #00008B;
+  background-color: #b0b9f4;
   /* other styling properties */
+  padding: 20px;
 }
 
 .noStory {
-  background-color: #964B00;
+  background-color: #f1d0ab;
   /* other styling properties */
+  padding: 20px;
 }
 
 /* Footer styles */
