@@ -216,37 +216,37 @@ function addToStoryContent(thisRow){
   console.log(thisRow)
   let spaceForStories =  document.getElementById("stories")
   let thisStory = document.createElement("div")
-   if(thisRow.feels == 'Positive'){ //if experience was positive
-     console.log('hello')
- 
-     thisStory.innerHTML = `<div class="posStory">
-     <b>We're happy your experience was positive, if you'd like, please describe your motivations for participation</b>
-     <p>${thisRow.why}<p>
-     <b>Story</b>
-     <p>${thisRow.participateDesc}</p></div>`; 
- 
-   }
-   else if (thisRow.feels == "Neutral"){ //if experience was neutral
-     thisStory.innerHTML = `<div class="neuStory">
-     <b>If you'd like, please describe your motivations for participation</b>
-     <p>${thisRow.why}<p>
-     <b>Story</b>
-     <p>${thisRow.participateDesc}</p></div>`; 
-   }
-   else if (thisRow.feels == "Negative"){ //if experience was negative
-     console.log('hello negative')
-     thisStory.innerHTML = `<div class="negStory">
-     <b>We're sorry to hear your experience was negative, if you'd like, please describe your motivations for participation</b>
-     <p>${thisRow.why}<p>
-     <b>Story</b>
-     <p>${thisRow.participateDesc}</p></div>`; 
-   }
-   else if (thisRow.Experienced == "No"){ //if have no experience
-     thisStory.innerHTML = `<div class="noStory">
-     <b>if you'd like, please describe your reasons for not participating</b>
-     <p>${thisRow.surveyNo}<p>
-     </div>`;     
- }
+  if (thisRow.feels == "Positive") {
+    thisStory.innerHTML = `
+      <div class="posStory">
+        <b>Please describe your motivations for participation:</b>
+        <p>${thisRow.why}</p>
+        <b>Story:</b>
+        <p>${thisRow.participateDesc}</p>
+      </div>`;
+  } else if (thisRow.feels == "Negative") {
+    thisStory.innerHTML = `
+      <div class="negStory">
+        <b>We're sorry to hear your experience was negative. Please describe your motivations for participation:</b>
+        <p>${thisRow.why}</p>
+        <b>Story:</b>
+        <p>${thisRow.participateDesc}</p>
+      </div>`;
+  } else if (thisRow.feels == "Neutral") {
+    thisStory.innerHTML = `
+      <div class="neuStory">
+        <b>Please describe your motivations for participation:</b>
+        <p>${thisRow.why}</p>
+        <b>Story:</b>
+        <p>${thisRow.participateDesc}</p>
+      </div>`;
+  } else if (thisRow.Experienced == "No") {
+    thisStory.innerHTML = `
+      <div class="noStory">
+        <b>If you'd like, please describe your reasons for not participating:</b>
+        <p>${thisRow.surveyNo}</p>
+      </div>`;
+  }
  console.log('thisStory')
  console.log(thisStory)
  spaceForStories.appendChild(thisStory);//this adds the button to our page.

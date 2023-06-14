@@ -97,6 +97,25 @@ header ul li a {
   overflow-y: scroll;
   height: calc(100% - 40px);
 }
+.posStory {
+  background-color: #AACFA0;
+  /* other styling properties */
+}
+
+.negStory {
+  background-color: #F0939B;
+  /* other styling properties */
+}
+
+.neuStory {
+  background-color: #00008B;
+  /* other styling properties */
+}
+
+.noStory {
+  background-color: #964B00;
+  /* other styling properties */
+}
 
 /* Footer styles */
 footer {
