@@ -114,11 +114,17 @@ header ul li a {
 .neuStory {
   background-color: #b0b9f4;
   /* other styling properties */
+  text-align: justify;
+
+  padding: 20px
 }
 
 .noStory {
   background-color: #f1d0ab;
   /* other styling properties */
+  text-align: justify;
+
+  padding: 20px
 }
 
 /* Footer styles */
