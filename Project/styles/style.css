@@ -96,10 +96,12 @@ header ul li a {
 #stories {
   overflow-y: scroll;
   height: calc(100% - 40px);
+  text-align: justify;
 }
 .posStory {
   background-color: #cff7b9;
   /* other styling properties */
+  text-align: justify;
   padding: 20px;
 }
 
@@ -107,7 +109,6 @@ header ul li a {
   background-color: #f2b2a4;
   /* other styling properties */
   text-align: justify;
-
   padding: 20px;
 }
 
@@ -115,7 +116,6 @@ header ul li a {
   background-color: #b0b9f4;
   /* other styling properties */
   text-align: justify;
-
   padding: 20px
 }
 
@@ -123,8 +123,17 @@ header ul li a {
   background-color: #f1d0ab;
   /* other styling properties */
   text-align: justify;
-
   padding: 20px
+}
+
+.boundary {
+  opacity: 1;
+  fill: #000000 !important;
+  /* Additional boundary styles */
+}
+.polygon {
+  opacity: 0.7;
+  /* Additional styles for the rest of the polygon */
 }
 
 /* Footer styles */
