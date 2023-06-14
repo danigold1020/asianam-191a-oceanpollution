@@ -64,6 +64,8 @@ We included an About page to enable users to learn more details about our projec
 **Santa Barbara Community Survey About Page:**
 <img width="1440" alt="about" src="https://github.com/danigold1020/asianam-191a-oceanpollution/assets/73193396/f1c2bad0-79d7-4acd-81cf-619cfafe125a">
 
+**Santa Barbara Community Survey Experience:**
+
 ## Acknowledgements
 - We created this project as part of the AAS191A: Web Development and GIS for Social Change course at UCLA.
 - We appreciate Professor Albert Kochaphum for guiding us throughout our project and for a meaningful quarter of learning!
