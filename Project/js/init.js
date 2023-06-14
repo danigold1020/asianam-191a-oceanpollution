@@ -297,7 +297,7 @@ function getBoundary() {
           } else if (zipCode == "93117") {
             color = "#ff8605"; // Replace with desired color
           } else if (zipCode == "93190") {
-            color = "#39124b"; // Replace with desired color
+            color = "#008000"; // Replace with desired color
           } else {
             // Make the polygon gray and blend in with basemap if it doesn't have any values
             color = "#820c0c";
