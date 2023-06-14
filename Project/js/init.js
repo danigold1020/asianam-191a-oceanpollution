@@ -37,10 +37,11 @@ L.control.layers(null,layers).addTo(map)
 
 function addMarker(thisRow) {
   let surveyZip = thisRow['What is the zip code of your residence in Santa Barbara?'];
+  let why = thisRow['What led you to participate in civic engagement?']
   let surveyData = {
     "surveyZip": surveyZip,
     "Experienced": thisRow['Have you participated in civic engagement (e.g. public hearings, town hall meetings, etc.) involving oil spills in the Santa Barbara community?'],
-    "motivation": thisRow['What led you to participate in civic engagement?'],
+    "why": thisRow['What led you to participate in civic engagement? '],
     "surveyNo": thisRow['Why not?'],
     "feels": thisRow['How would you describe your overall experience in civic engagement?'],
     "participateDesc": thisRow['Please describe your experience.'],}
@@ -220,7 +221,7 @@ function addToStoryContent(thisRow){
  
      thisStory.innerHTML = `<div class="posStory">
      <b>We're happy your experience was positive, if you'd like, please describe your motivations for participation</b>
-     <p>${thisRow.motivation}<p>
+     <p>${thisRow.why}<p>
      <b>Story</b>
      <p>${thisRow.participateDesc}</p></div>`; 
  
@@ -228,7 +229,7 @@ function addToStoryContent(thisRow){
    else if (thisRow.feels == "Neutral"){ //if experience was neutral
      thisStory.innerHTML = `<div class="neuStory">
      <b>If you'd like, please describe your motivations for participation</b>
-     <p>${thisRow.motivation}<p>
+     <p>${thisRow.why}<p>
      <b>Story</b>
      <p>${thisRow.participateDesc}</p></div>`; 
    }
@@ -236,7 +237,7 @@ function addToStoryContent(thisRow){
      console.log('hello negative')
      thisStory.innerHTML = `<div class="negStory">
      <b>We're sorry to hear your experience was negative, if you'd like, please describe your motivations for participation</b>
-     <p>${thisRow.motivation}<p>
+     <p>${thisRow.why}<p>
      <b>Story</b>
      <p>${thisRow.participateDesc}</p></div>`; 
    }
