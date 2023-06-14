@@ -100,21 +100,29 @@ header ul li a {
 .posStory {
   background-color: #AACFA0;
   /* other styling properties */
+  text-align: justify;
+
 }
 
 .negStory {
   background-color: #F0939B;
   /* other styling properties */
+  text-align: justify;
+
 }
 
 .neuStory {
   background-color: #00008B;
   /* other styling properties */
+  text-align: justify;
+
 }
 
 .noStory {
   background-color: #964B00;
   /* other styling properties */
+  text-align: justify;
+
 }
 
 /* Footer styles */
