@@ -269,39 +269,46 @@ function getBoundary() {
           let color;
       
           if (zipCode == "93101") {
-            color = "#F2A33A";
+            color = "#04f200";
           } else if (zipCode == "93102") {
-            color = "#2E6C6C";
+            color = "#191961";
           } else if (zipCode == "93103") {
-            color = "#921C6A";
+            color = "#c34646";
           } else if (zipCode == "93105") {
-            color = "#FF0000"; // Replace with desired color
+            color = "#ff05cd"; // Replace with desired color
           } else if (zipCode == "93107") {
-            color = "#00FF00"; // Replace with desired color
+            color = "#67401e"; // Replace with desired color
           } else if (zipCode == "93108") {
-            color = "#0000FF"; // Replace with desired color
+            color = "#68b4ae"; // Replace with desired color
           } else if (zipCode == "93109") {
-            color = "#FFFF00"; // Replace with desired color
+            color = "#e3a02f"; // Replace with desired color
           } else if (zipCode == "93110") {
-            color = "#FF00FF"; // Replace with desired color
+            color = "#185027"; // Replace with desired color
           } else if (zipCode == "93120") {
-            color = "#00FFFF"; // Replace with desired color
+            color = "#e7d768"; // Replace with desired color
           } else if (zipCode == "93121") {
-            color = "#808080"; // Replace with desired color
+            color = "##5c7c14"; // Replace with desired color
           } else if (zipCode == "93140") {
-            color = "#800000"; // Replace with desired color
+            color = "#e7d768"; // Replace with desired color
+          } else if (zipCode == "93111") {
+            color = "#0c0e82"; // Replace with desired color
+          } else if (zipCode == "93013") {
+            color = "#cf07e6"; // Replace with desired color
+          } else if (zipCode == "93117") {
+            color = "#ff8605"; // Replace with desired color
           } else if (zipCode == "93190") {
-            color = "#008000"; // Replace with desired color
+            color = "#39124b"; // Replace with desired color
           } else {
             // Make the polygon gray and blend in with basemap if it doesn't have any values
-            color = "#000000";
+            color = "#820c0c";
           }
       
           return { color: color, stroke: false };
         }
       });
-      currentLayer.addTo(map)
-      
+      currentLayer.addTo(map);
+      let polygons = document.getElementsByClassName('leaflet-interactive');
+
     // add the geojson to the map
         });
 }
