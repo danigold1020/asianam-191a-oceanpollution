@@ -292,6 +292,12 @@ function getBoundary() {
             color = "#800000"; // Replace with desired color
           } else if (zipCode == "93190") {
             color = "#008000"; // Replace with desired color
+          } else if (zipCode == "93117") {
+            color = "#00FF00"; // Replace with desired color
+          } else if (zipCode == "93013") {
+            color = "#ff6347"; // Replace with desired color
+          } else if (zipCode == "93111") {
+            color = "#20b2aa"; // Replace with desired color
           } else {
             // Make the polygon gray and blend in with basemap if it doesn't have any values
             color = "#000000";
