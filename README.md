@@ -58,8 +58,7 @@ We included an About page to enable users to learn more details about our projec
 <img width="1440" alt="welcome" src="https://github.com/danigold1020/asianam-191a-oceanpollution/assets/73193396/8b22ece2-c625-4c5e-a9e9-fd8687df1ab2">
 
 **Santa Barbara Community Survey Home Page:**
-<img width="1440" alt="home" src="https://github.com/danigold1020/asianam-191a-oceanpollution/assets/73193396/7f67f3de-8c9f-48b0-8c16-7d32ce5a661c">
-
+<img width="1440" alt="legend" src="https://github.com/danigold1020/asianam-191a-oceanpollution/assets/73193396/89f85f79-8095-40be-bb9c-3678353bb696">
 
 **Santa Barbara Community Survey About Page:**
 <img width="1440" alt="about" src="https://github.com/danigold1020/asianam-191a-oceanpollution/assets/73193396/f1c2bad0-79d7-4acd-81cf-619cfafe125a">
